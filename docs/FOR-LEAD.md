@@ -9,8 +9,8 @@ URLs, so both now 404. They are in `docs/FORM-LINKS.md`.
 
 | Currently in your repo | Should be |
 |---|---|
-| `dev.to/WaifuPuller_068c2e22e9b0/...` | `dev.to/sasi_chandan_068c2e22e9b0/...` |
-| `linkedin.com/posts/WaifuPuller-733054365_...` | `linkedin.com/posts/sasi-chandan-733054365_...` |
+| `dev.to/sasi_chandan_068c2e22e9b0/...` | `dev.to/sasi_chandan_068c2e22e9b0/...` |
+| `linkedin.com/posts/sasi-chandan-733054365_...` | `linkedin.com/posts/sasi-chandan-733054365_...` |
 
 Verified: the `WaifuPuller` variants return 404, the `sasi_chandan` ones return 200.
 
@@ -20,7 +20,7 @@ the article and LinkedIn post for the second member were unreachable.
 Fix it from the repo root:
 
 ```bash
-sed -i 's|dev.to/WaifuPuller_068c2e22e9b0|dev.to/sasi_chandan_068c2e22e9b0|; s|posts/WaifuPuller-733054365|posts/sasi-chandan-733054365|' docs/FORM-LINKS.md
+sed -i 's|dev.to/sasi_chandan_068c2e22e9b0|dev.to/sasi_chandan_068c2e22e9b0|; s|posts/sasi-chandan-733054365|posts/sasi-chandan-733054365|' docs/FORM-LINKS.md
 ```
 
 The same replace also turned an em dash into a replacement character on line 31 of that

@@ -111,7 +111,7 @@ Memolint ships an MCP server, so Claude Code, Codex, Cursor and anything else th
 the Model Context Protocol can query the same bank:
 
 ```bash
-claude mcp add memolint -- memolint-mcp
+claude mcp add memolint -- uvx --from git+https://github.com/WaifuPuller/MemoLint memolint-mcp
 ```
 
 The agent is instructed to call `recall_team_memory` before writing code, so it follows

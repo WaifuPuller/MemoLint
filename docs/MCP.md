@@ -48,6 +48,10 @@ Either puts `memolint-mcp` on your PATH. It needs the same `.env` as the CLI, so
 `review_changes` also needs a model key.
 
 
+## Claude Code
+
+```bash
+claude mcp add memolint -- uvx --from git+https://github.com/WaifuPuller/MemoLint memolint-mcp
 ```
 
 Or add it to `.mcp.json` in the project root so the whole team gets it:
