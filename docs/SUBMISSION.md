@@ -67,7 +67,7 @@ lived it:
 | Member | Article |
 |---|---|
 | Team lead | `article-memory-design.md` |
-| WaifuPuller | `article-ab-test.md` |
+| Sasi Chandan | `article-ab-test.md` |
 
 **4. Each member posts on LinkedIn.** Text in `docs/linkedin-posts.md`. Then two
 comments on your own post: first the article URL, second

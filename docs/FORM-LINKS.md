@@ -18,17 +18,17 @@ every link here is canonical and will not expire.
 | LinkedIn post | https://www.linkedin.com/posts/aaditya-singh-408968357_github-waifupullermemolint-activity-7510723164184739840-Rs4N |
 | Reddit post | https://www.reddit.com/r/LLMDevs/comments/1wtdo7w/hindsight_made_my_code_reviewer_stop_repeating/ |
 
-## WaifuPuller
+## Sasi Chandan
 
 | Field | Link |
 |---|---|
-| Article | https://dev.to/WaifuPuller_068c2e22e9b0/i-proved-hindsight-worked-then-found-my-test-was-broken-257b |
-| LinkedIn post | https://www.linkedin.com/posts/WaifuPuller-733054365_aiagents-agentmemory-aimemory-share-7510722719852949505-jz9Y |
+| Article | https://dev.to/sasi_chandan_068c2e22e9b0/i-proved-hindsight-worked-then-found-my-test-was-broken-257b |
+| LinkedIn post | https://www.linkedin.com/posts/sasi-chandan-733054365_aiagents-agentmemory-aimemory-share-7510722719852949505-jz9Y |
 | Reddit post | https://www.reddit.com/r/SideProject/comments/1wtebdr/i_proved_hindsight_worked_then_found_my_test_was/ |
 
 ## Do not submit until
 
-- [x] The video is uploaded to YouTube — **confirm it is set to Public, not Unlisted**
+- [x] The video is uploaded to YouTube - **confirm it is set to Public, not Unlisted**
 - [ ] Every Reddit link opens in a private browser window, proving it was not filtered
 - [ ] Both members have completed the Profile Review Form
 - [ ] The repository has a description set on GitHub
