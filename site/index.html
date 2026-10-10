@@ -197,7 +197,6 @@
 
   <div class="tabs" role="tablist">
     <button role="tab" aria-selected="true" data-tab="cli">Command line</button>
-    <button role="tab" aria-selected="false" data-tab="claude">Claude Code</button>
     <button role="tab" aria-selected="false" data-tab="codex">Codex / Cursor / Antigravity</button>
     <button role="tab" aria-selected="false" data-tab="local">Fully local, no API keys</button>
   </div>
@@ -226,13 +225,6 @@ GROQ_API_KEY=gsk_...</pre></div>
 <span class="p">$</span> memolint teach <span style="color:var(--cool)">"prefer guard clauses over nested ifs"</span>
 <span class="p">$</span> memolint incident <span style="color:var(--cool)">"N+1 in checkout caused the Sept 3 outage"</span></pre></div>
   </div>
-
-  <div class="panel" id="p-claude" hidden>
-    <h4>One line</h4>
-    <p>MemoLint ships an MCP server, so the agent that writes your code can consult the same
-      memory before it writes. Nothing is installed permanently.</p>
-    <div class="code"><button class="copy" data-copy="claude mcp add memolint -- uvx --from git+https://github.com/WaifuPuller/MemoLint memolint-mcp">Copy</button>
-      <pre><span class="p">$</span> claude mcp add memolint -- uvx --from git+https://github.com/WaifuPuller/MemoLint memolint-mcp</pre></div>
     <h4>Then add your Hindsight key</h4>
     <div class="code"><button class="copy" data-copy="HINDSIGHT_API_KEY=hsk_...">Copy</button>
       <pre><span class="c"># .env in your project</span>
