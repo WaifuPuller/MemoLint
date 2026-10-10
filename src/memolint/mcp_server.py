@@ -4,7 +4,7 @@ Reviewing code after it is written is the narrow use of a team memory bank. The
 broader one is letting the agent that *writes* the code consult the same memory
 first, so it follows your conventions instead of being corrected afterwards.
 
-This exposes the bank over the Model Context Protocol, so Claude Code, Codex,
+This exposes the bank over the Model Context Protocol, so Codex,
 Cursor, Antigravity or anything else that speaks MCP can use it.
 
 Run it directly:

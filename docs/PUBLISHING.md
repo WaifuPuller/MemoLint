@@ -41,7 +41,6 @@ pipx install memolint
 Or, with no install at all, which is how most people try an MCP server:
 
 ```bash
-claude mcp add memolint -- uvx --from memolint memolint-mcp
 ```
 
 `uvx` downloads the package into a throwaway environment and runs it. Nothing to clone,

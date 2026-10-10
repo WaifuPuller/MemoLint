@@ -9,7 +9,6 @@ it. Same server, same bank, every client.
 
 ```
                         ┌──────────────────┐
-  Claude Code  ──┐      │                  │
   Codex        ──┤      │  memolint-mcp    │ ◄──► Hindsight bank
   Cursor       ──┼─────►│  (stdio)         │      (per repository)
   Antigravity  ──┤      │                  │
@@ -40,10 +39,7 @@ That puts `memolint-mcp` on your PATH. It needs the same `.env` as the CLI, so f
 [KEYS.md](../KEYS.md) first. Only the Hindsight values are required for the memory tools;
 `review_changes` also needs a model key.
 
-## Claude Code
 
-```bash
-claude mcp add memolint -- memolint-mcp
 ```
 
 Or add it to `.mcp.json` in the project root so the whole team gets it:
@@ -103,3 +99,4 @@ history that drives it with the Python MCP client.
 
 Set `MEMOLINT_MCP_TRANSPORT=streamable-http` to run it over HTTP instead of stdio, for
 clients that prefer that.
+

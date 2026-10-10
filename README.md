@@ -31,7 +31,6 @@ pipx install memolint
 Or run the MCP server with no install at all:
 
 ```bash
-claude mcp add memolint -- uvx --from memolint memolint-mcp
 ```
 
 ## Setup from source
@@ -103,11 +102,10 @@ Each repository gets its own memory bank, derived from the git remote or `--repo
 Reviewing code after it is written is the narrow use of a team memory bank. The broader
 one is letting the agent that *writes* the code consult the same memory first.
 
-Memolint ships an MCP server, so Claude Code, Codex, Cursor and anything else that speaks
+Memolint ships an MCP server, so Codex, Cursor and anything else that speaks
 the Model Context Protocol can query the same bank:
 
 ```bash
-claude mcp add memolint -- memolint-mcp
 ```
 
 The agent is instructed to call `recall_team_memory` before writing code, so it follows
