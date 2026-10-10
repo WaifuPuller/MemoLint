@@ -9,7 +9,7 @@ it. Same server, same bank, every client.
 
 ```
                         ┌──────────────────┐
-  Codex        ──┤      │  memolint-mcp    │ ◄──► Hindsight bank
+  Codex        ──┐      │  memolint-mcp    │ ◄──► Hindsight bank
   Cursor       ──┼─────►│  (stdio)         │      (per repository)
   Antigravity  ──┤      │                  │
   anything MCP ──┘      └──────────────────┘

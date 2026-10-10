@@ -28,11 +28,6 @@ Once it is on PyPI:
 pipx install memolint
 ```
 
-Or run the MCP server with no install at all:
-
-```bash
-```
-
 ## Setup from source
 
 ```bash
@@ -104,9 +99,6 @@ one is letting the agent that *writes* the code consult the same memory first.
 
 Memolint ships an MCP server, so Codex, Cursor and anything else that speaks
 the Model Context Protocol can query the same bank:
-
-```bash
-```
 
 The agent is instructed to call `recall_team_memory` before writing code, so it follows
 your conventions instead of being corrected afterwards. It can also store a rule when you
