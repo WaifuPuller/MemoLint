@@ -22,11 +22,21 @@ Three PRs against a fictional `orderflow` service. PR 1 gets a generic review. T
 
 ## Install
 
-Once it is on PyPI:
+Works today, straight from this repository:
 
 ```bash
-pipx install memolint
+pip install git+https://github.com/WaifuPuller/MemoLint
 ```
+
+That gives you both `memolint` and `memolint-mcp`. To wire the MCP server into a coding
+agent in one line, with nothing installed permanently:
+
+```bash
+claude mcp add memolint -- uvx --from git+https://github.com/WaifuPuller/MemoLint memolint-mcp
+```
+
+Once the package is on PyPI the same commands shorten to `pipx install memolint` and
+`uvx --from memolint memolint-mcp`. See [docs/PUBLISHING.md](docs/PUBLISHING.md).
 
 ## Setup from source
 
@@ -97,8 +107,12 @@ Each repository gets its own memory bank, derived from the git remote or `--repo
 Reviewing code after it is written is the narrow use of a team memory bank. The broader
 one is letting the agent that *writes* the code consult the same memory first.
 
-Memolint ships an MCP server, so Codex, Cursor and anything else that speaks
+Memolint ships an MCP server, so Claude Code, Codex, Cursor and anything else that speaks
 the Model Context Protocol can query the same bank:
+
+```bash
+claude mcp add memolint -- memolint-mcp
+```
 
 The agent is instructed to call `recall_team_memory` before writing code, so it follows
 your conventions instead of being corrected afterwards. It can also store a rule when you
