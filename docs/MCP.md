@@ -9,8 +9,7 @@ it. Same server, same bank, every client.
 
 ```
                         ┌──────────────────┐
-  Claude Code  ──┐      │                  │
-  Codex        ──┤      │  memolint-mcp    │ ◄──► Hindsight bank
+  Codex        ──┐      │  memolint-mcp    │ ◄──► Hindsight bank
   Cursor       ──┼─────►│  (stdio)         │      (per repository)
   Antigravity  ──┤      │                  │
   anything MCP ──┘      └──────────────────┘
@@ -55,7 +54,7 @@ launches the server from whatever working directory it chooses, so a `.env` is n
 discovered; an environment variable always is. Verified: the server runs correctly from a
 directory with no `.env` present when the key is passed this way.
 
-## Claude Code
+## Config via .mcp.json
 
 ```json
 {

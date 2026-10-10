@@ -50,8 +50,7 @@ git push
 
 ### What arrives
 
-- `src/memolint/mcp_server.py`, six tools over the Model Context Protocol, so Claude Code,
-  Codex, Cursor and anything else that speaks MCP can query the team memory. Tested
+- `src/memolint/mcp_server.py`, six tools over the Model Context Protocol, so Codex, Cursor and anything else that speaks MCP can query the team memory. Tested
   against the live bank.
 - PyPI packaging: full metadata, builds clean, installs into an empty environment.
 - `HINDSIGHT_BASE_URL` now defaults to Hindsight Cloud, so new users need one key instead
@@ -126,7 +125,7 @@ publish rights over the package name.
 
 ```bash
 pipx install memolint
-claude mcp add memolint -- uvx --from memolint memolint-mcp
+uvx --from memolint memolint-mcp
 ```
 
 That one line is the answer when someone asks how to run it on their own laptop.

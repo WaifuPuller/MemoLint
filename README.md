@@ -24,7 +24,7 @@ That gives you both `memolint` and `memolint-mcp`. To wire the MCP server into a
 agent in one line, with nothing installed permanently:
 
 ```bash
-claude mcp add memolint -- uvx --from git+https://github.com/WaifuPuller/MemoLint memolint-mcp
+uvx --from git+https://github.com/WaifuPuller/MemoLint memolint-mcp
 ```
 
 Once the package is on PyPI the same commands shorten to `pipx install memolint` and
@@ -57,7 +57,7 @@ memolint init          # creates the bank, and fails loudly if a key is wrong
 ```
 
 **Using the MCP server**, in the server's own `env` block, inside your client's MCP config
-file. For Claude Code that is `.mcp.json` at your project root; for Codex it is
+file. For many clients that is `.mcp.json` at your project root; for Codex it is
 `~/.codex/config.toml`. A client launches the server from a working directory of its
 choosing, so a `.env` file is not reliably found. An environment variable always is.
 The next section has the exact block.
@@ -132,7 +132,7 @@ Each repository gets its own memory bank, derived from the git remote or `--repo
 Reviewing code after it is written is the narrow use of a team memory bank. The broader
 one is letting the agent that *writes* the code consult the same memory first.
 
-Memolint ships an MCP server, so Claude Code, Codex, Cursor and anything else that speaks
+Memolint ships an MCP server, so Codex, Cursor and anything else that speaks
 the Model Context Protocol can query the same bank. Put your Hindsight key in the server's
 `env` block, not in a `.env` file:
 
@@ -150,7 +150,6 @@ the Model Context Protocol can query the same bank. Put your Hindsight key in th
 
 | Client | Config file |
 |---|---|
-| Claude Code | `.mcp.json` at your project root, so the team picks it up from git |
 | Codex | `~/.codex/config.toml`, using TOML rather than JSON |
 | Cursor, Windsurf, Antigravity | Each keeps its own JSON file. Search that client's settings for "MCP" to find it. |
 
